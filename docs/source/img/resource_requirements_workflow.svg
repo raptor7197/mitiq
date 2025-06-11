@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- background -->
+    <rect width="800" height="400" fill="#fffbf0"/>
+    
+    <!-- title -->
+    <text x="400" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#8b4513">
+        Resource Requirements Workflow
+    </text>
+    
+    <!-- arrow marker definition -->
+    <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5"
+            markerWidth="6" markerHeight="6" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#d2691e"/>
+        </marker>
+    </defs>
+    
+    <!-- workflow boxes -->
+    <g transform="translate(50,70)">
+        <!-- input circuit -->
+        <rect x="0" y="0" width="150" height="70" rx="8" fill="#fff8dc" stroke="#daa520" stroke-width="2"/>
+        <text x="75" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="500" text-anchor="middle" fill="#8b4513">
+            Input Circuit
+        </text>
+        <text x="75" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#cd853f">
+            Definition
+        </text>
+        
+        <!-- resource analysis -->
+        <rect x="185" y="0" width="150" height="70" rx="8" fill="#ffefd5" stroke="#ff8c00" stroke-width="2"/>
+        <text x="260" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="500" text-anchor="middle" fill="#8b4513">
+            Resource Analysis
+        </text>
+        <text x="260" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#cd853f">
+            Estimation
+        </text>
+        
+        <!-- circuit construction -->
+        <rect x="370" y="0" width="150" height="70" rx="8" fill="#fff8dc" stroke="#ffd700" stroke-width="2"/>
+        <text x="445" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="500" text-anchor="middle" fill="#8b4513">
+            Circuit Construction
+        </text>
+        <text x="445" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#cd853f">
+            Implementation
+        </text>
+        
+        <!-- result combination -->
+        <rect x="555" y="0" width="150" height="70" rx="8" fill="#ffefd5" stroke="#f4a460" stroke-width="2"/>
+        <text x="630" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="500" text-anchor="middle" fill="#8b4513">
+            Result Combination
+        </text>
+        <text x="630" y="50" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#cd853f">
+            Optimization
+        </text>
+        
+        <!-- arrows -->
+        <path d="M150,35 L185,35" stroke="#d2691e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+        <path d="M335,35 L370,35" stroke="#d2691e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+        <path d="M520,35 L555,35" stroke="#d2691e" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    </g>
+    
+    <!-- key metrics section -->
+    <g transform="translate(50,200)">
+        <!-- metrics header -->
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#8b4513">
+            Key Metrics
+        </text>
+        
+        <!-- metrics list with icons -->
+        <g transform="translate(0,30)">
+            <!-- circuit count -->
+            <circle cx="8" cy="8" r="3" fill="#ff8c00"/>
+            <text x="25" y="12" font-family="Arial, sans-serif" font-size="14" fill="#8b4513">
+                Number of circuits required
+            </text>
+            
+            <!-- gate overhead -->
+            <circle cx="8" cy="38" r="3" fill="#ffd700"/>
+            <text x="25" y="42" font-family="Arial, sans-serif" font-size="14" fill="#8b4513">
+                Gate overhead and complexity
+            </text>
+            
+                <!-- Memory requirements -->
+            <circle cx="8" cy="68" r="3" fill="#daa520"/>
+            <text x="25" y="72" font-family="Arial, sans-serif" font-size="14" fill="#8b4513">
+                Memory requirements and allocation
+            </text>
+            
+            <!-- Hardware constraints -->
+            <circle cx="8" cy="98" r="3" fill="#d2691e"/>
+            <text x="25" y="102" font-family="Arial, sans-serif" font-size="14" fill="#8b4513">
+                Hardware constraints and limitations
+            </text>
+        </g>
+    </g>
+    
+    <!-- Performance indicators -->
+    <g transform="translate(450,200)">
+        <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#8b4513">
+            Performance Indicators
+        </text>
+        
+        <g transform="translate(0,30)">
+            <!-- Efficiency -->
+            <rect x="0" y="0" width="15" height="15" fill="#ff8c00"/>
+            <text x="25" y="12" font-family="Arial, sans-serif" font-size="14" fill="#8b4513">
+                Resource efficiency
+            </text>
+            
+            <!-- Scalability -->
+            <rect x="0" y="30" width="15" height="15" fill="#ffd700"/>
+            <text x="25" y="42" font-family="Arial, sans-serif" font-size="14" fill="#8b4513">
+                Scalability factor
+            </text>
+            
+            <!-- Optimization -->
+            <rect x="0" y="60" width="15" height="15" fill="#d2691e"/>
+            <text x="25" y="72" font-family="Arial, sans-serif" font-size="14" fill="#8b4513">
+                Optimization level
+            </text>
+        </g>
+    </g>
+</svg>
